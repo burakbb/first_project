@@ -1,0 +1,16 @@
+/home/burak/work/first_project/sensordata_producer/obj/Debug/netcoreapp3.1/sensordata_producer.csprojAssemblyReference.cache
+/home/burak/work/first_project/sensordata_producer/obj/Debug/netcoreapp3.1/sensordata_producer.AssemblyInfoInputs.cache
+/home/burak/work/first_project/sensordata_producer/obj/Debug/netcoreapp3.1/sensordata_producer.AssemblyInfo.cs
+/home/burak/work/first_project/sensordata_producer/obj/Debug/netcoreapp3.1/sensordata_producer.csproj.CoreCompileInputs.cache
+/home/burak/work/first_project/sensordata_producer/bin/Debug/netcoreapp3.1/sensordata_producer
+/home/burak/work/first_project/sensordata_producer/bin/Debug/netcoreapp3.1/sensordata_producer.deps.json
+/home/burak/work/first_project/sensordata_producer/bin/Debug/netcoreapp3.1/sensordata_producer.runtimeconfig.json
+/home/burak/work/first_project/sensordata_producer/bin/Debug/netcoreapp3.1/sensordata_producer.runtimeconfig.dev.json
+/home/burak/work/first_project/sensordata_producer/bin/Debug/netcoreapp3.1/sensordata_producer.dll
+/home/burak/work/first_project/sensordata_producer/bin/Debug/netcoreapp3.1/sensordata_producer.pdb
+/home/burak/work/first_project/sensordata_producer/bin/Debug/netcoreapp3.1/RabbitMQ.Client.dll
+/home/burak/work/first_project/sensordata_producer/bin/Debug/netcoreapp3.1/System.Threading.Channels.dll
+/home/burak/work/first_project/sensordata_producer/obj/Debug/netcoreapp3.1/sensordata_producer.csproj.CopyComplete
+/home/burak/work/first_project/sensordata_producer/obj/Debug/netcoreapp3.1/sensordata_producer.dll
+/home/burak/work/first_project/sensordata_producer/obj/Debug/netcoreapp3.1/sensordata_producer.pdb
+/home/burak/work/first_project/sensordata_producer/obj/Debug/netcoreapp3.1/sensordata_producer.genruntimeconfig.cache

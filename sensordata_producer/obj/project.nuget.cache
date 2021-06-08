@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "V8Chk0iL87v5pMUaXUc322rbmqbRauCcldo86uekKZNIsoeBAmAPkTTv7szJ00HEDIsiZ8dKROLAj1uWu+4png==",
+  "success": true,
+  "projectFilePath": "/home/burak/work/first_project/sensordata_producer/sensordata_producer.csproj",
+  "expectedPackageFiles": [
+    "/home/burak/.nuget/packages/rabbitmq.client/6.2.1/rabbitmq.client.6.2.1.nupkg.sha512",
+    "/home/burak/.nuget/packages/system.memory/4.5.4/system.memory.4.5.4.nupkg.sha512",
+    "/home/burak/.nuget/packages/system.threading.channels/4.7.1/system.threading.channels.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}

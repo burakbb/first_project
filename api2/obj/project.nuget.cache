@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "dgSpecHash": "/w5VnEeJF6SecUyamG3fCJyXBI6o1Ys0qoxjxt/O19S7hEsQMgKsSrQRJ6Zs7OUjRi+gqvv9YO88g0JV2U+PBQ==",
+  "success": true,
+  "projectFilePath": "/home/burak/work/first_project/api2/api2.csproj",
+  "expectedPackageFiles": [
+    "/home/burak/.nuget/packages/elasticsearch.net/7.13.0/elasticsearch.net.7.13.0.nupkg.sha512",
+    "/home/burak/.nuget/packages/microsoft.csharp/4.6.0/microsoft.csharp.4.6.0.nupkg.sha512",
+    "/home/burak/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/home/burak/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/home/burak/.nuget/packages/nest/7.13.0/nest.7.13.0.nupkg.sha512",
+    "/home/burak/.nuget/packages/rabbitmq.client/6.2.1/rabbitmq.client.6.2.1.nupkg.sha512",
+    "/home/burak/.nuget/packages/swashbuckle.aspnetcore/6.1.4/swashbuckle.aspnetcore.6.1.4.nupkg.sha512",
+    "/home/burak/.nuget/packages/swashbuckle.aspnetcore.swagger/6.1.4/swashbuckle.aspnetcore.swagger.6.1.4.nupkg.sha512",
+    "/home/burak/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.1.4/swashbuckle.aspnetcore.swaggergen.6.1.4.nupkg.sha512",
+    "/home/burak/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.1.4/swashbuckle.aspnetcore.swaggerui.6.1.4.nupkg.sha512",
+    "/home/burak/.nuget/packages/system.buffers/4.5.1/system.buffers.4.5.1.nupkg.sha512",
+    "/home/burak/.nuget/packages/system.diagnostics.diagnosticsource/5.0.0/system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512",
+    "/home/burak/.nuget/packages/system.memory/4.5.4/system.memory.4.5.4.nupkg.sha512",
+    "/home/burak/.nuget/packages/system.threading.channels/4.7.1/system.threading.channels.4.7.1.nupkg.sha512"
+  ],
+  "logs": []
+}
