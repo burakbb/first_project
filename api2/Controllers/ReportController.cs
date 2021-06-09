@@ -42,9 +42,7 @@ namespace api2.Controllers
                         )
                     )
                 );
-                        //Console.WriteLine(searchResponse.DebugInformation);
                         var average_duration = (double)searchResponse.Aggregations.Children("id_match").Average("avg_duration").Value.GetValueOrDefault();
-                        //searchResponse.Aggregations.Filter("id_match").Ag
                         return new ResultData{
                             sensorId = id,
                             averageDuration = average_duration

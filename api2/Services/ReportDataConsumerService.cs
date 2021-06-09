@@ -37,7 +37,6 @@ namespace api2.Services{
                 var reportData = JsonSerializer.Deserialize<ReportData>(content);
                 reportData.SensorId = reportData.Id;
                 reportData.Id = Guid.NewGuid();
-                //Console.WriteLine(reportData.Id+", "+ reportData.StartDate+", "+reportData.EndDate+", "+ reportData.Duration);
                 var response =_elasticClient.IndexDocument<ReportData>(reportData);
                 _reportDataChannel.BasicAck(ea.DeliveryTag,false);
                 
