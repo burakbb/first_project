@@ -1,6 +1,7 @@
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using Nest;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using System.Threading;
 using System.Threading.Tasks;
@@ -17,13 +18,13 @@ namespace api2.Services{
         private string _reportDataQueueName;
         private readonly ElasticClient _elasticClient;
 
-        public ReportDataConsumerService(ElasticClient elasticClient){
+        public ReportDataConsumerService(ElasticClient elasticClient, IConfiguration configuration){
             var factory = new ConnectionFactory{
-                HostName = "localhost",
-                UserName = "guest",
-                Password = "guest"
+                HostName = configuration["rabbitmq:hostname"],
+                UserName = configuration["rabbitmq:username"],
+                Password = configuration["rabbitmq:password"],
             };
-            _reportDataQueueName = "report_data";
+            _reportDataQueueName = configuration["rabbitmq:channel"];
             _connection = factory.CreateConnection();
             _reportDataChannel = _connection.CreateModel();
             _elasticClient = elasticClient;

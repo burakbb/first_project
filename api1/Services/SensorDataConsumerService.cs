@@ -1,6 +1,7 @@
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Configuration;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Text;
@@ -21,15 +22,15 @@ namespace api1.Services{
         private readonly ICacheService _cacheService;
 
 
-        public SensorDataConsumerService(ISensorDataService sensorDataService,ICacheService cacheService){
+        public SensorDataConsumerService(IConfiguration configuration, ISensorDataService sensorDataService,ICacheService cacheService){
             var factory = new ConnectionFactory
             {
-                HostName = "localhost",
-                UserName = "guest",
-                Password = "guest"
+                HostName = configuration["rabbitmq:hostname"],
+                UserName = configuration["rabbitmq:username"],
+                Password = configuration["rabbitmq:password"],
             };
-            _sensorDataQueueName = "sensor_data";
-            _reportDataQueueName = "report_data";
+            _sensorDataQueueName = configuration["rabbitmq:sensorDataQueueChannel"];
+            _reportDataQueueName = configuration["rabbitmq:reportDataQueueChannel"];
 
             _connection = factory.CreateConnection();
             _sensorDataChannel = _connection.CreateModel();
