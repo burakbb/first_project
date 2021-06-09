@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using Nest;
 
 using api2.Models;
@@ -18,7 +14,6 @@ namespace api2.Controllers
         private readonly ElasticClient _elasticClient;
         public ReportDataController(ElasticClient elasticClient){
             _elasticClient = elasticClient;
-            
         }
 
         [HttpPost]
@@ -42,7 +37,7 @@ namespace api2.Controllers
                         )
                     )
                 );
-                        var average_duration = (double)searchResponse.Aggregations.Children("id_match").Average("avg_duration").Value.GetValueOrDefault();
+                        var average_duration = (double) searchResponse.Aggregations.Children("id_match").Average("avg_duration").Value.GetValueOrDefault();
                         return new ResultData{
                             sensorId = id,
                             averageDuration = average_duration
@@ -50,14 +45,13 @@ namespace api2.Controllers
                     }
                     else{
                         var searchResponse = _elasticClient.Search<object>(s => s
-                             .Size(0)
+                            .Size(0)
                             .Aggregations(aa => aa
                                         .Average("avg_duration", ad => ad
                                             .Field("duration")
                             )));
                         
-                        var average_duration = (double)searchResponse.Aggregations.Average("avg_duration").Value.GetValueOrDefault();
-                        
+                        var average_duration = (double) searchResponse.Aggregations.Average("avg_duration").Value.GetValueOrDefault();
                         return new ResultData{
                             sensorId = Guid.Empty,
                             averageDuration = average_duration
@@ -66,6 +60,7 @@ namespace api2.Controllers
                     }
                 }
                 catch(Exception e){
+                    Console.WriteLine(e);
                     return BadRequest();
                 }
         }
