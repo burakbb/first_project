@@ -48,7 +48,6 @@ namespace api1.Services{
                 consumer.Received += (ch, ea) =>{
                     var content = Encoding.UTF8.GetString(ea.Body.ToArray());                
                     var sensorData = JsonSerializer.Deserialize<SensorData>(content);
-                    Console.WriteLine(sensorData.Id.ToString()+" ,"+sensorData.Timestamp.ToString()+" ,"+ sensorData.Value.ToString());                
                     _sensorDataChannel.BasicAck(ea.DeliveryTag, false);
                     _sensorDataService.Insert(sensorData);
                     var lastCacheItem = _cacheService.GetSensorData(sensorData.Id);
