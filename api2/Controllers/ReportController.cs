@@ -1,9 +1,7 @@
 ﻿using System;
 using Microsoft.AspNetCore.Mvc;
 using Nest;
-
 using api2.Models;
-
 
 namespace api2.Controllers
 {
